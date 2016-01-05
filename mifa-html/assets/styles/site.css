@@ -1,0 +1,8 @@
+﻿/*==========================site styles======================*/
+body
+{
+    background: url(../images/mg-bg.jpg) repeat center top;
+}
+#mainContent {
+    background-color: #fff;
+}

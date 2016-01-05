@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/site.master" AutoEventWireup="true" CodeFile="site-sub.master.cs" Inherits="site_sub" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class="wrapper-main">
+        <div id="colAside">
+            <h4 class="title-a">danh mục sản phẩm</h4>
+            <ul class="menu-product">
+                <li><a href="san-pham.aspx">Sắt thép lap (đặc)</a></li>
+                <li><a href="#">Sắt thép hộp</a></li>
+                <li><a href="#">Sắt thép ống</a></li>
+                <li><a href="#">Inox lap</a></li>
+                <li><a href="#">Inox hộp vuông, chữnhật</a></li>
+                <li><a href="#">Inox ống</a></li>
+            </ul>
+            <h4 class="title-a">sản phẩm mới</h4>
+            <div class="aside-product">
+                <div id="sliderProduct" data-num="2">
+                    <div class="slide"><a href="#" class="product-img"><img src="assets/images/product-img-1.jpg" alt=""/></a></div>
+                    <div class="slide"><a href="#" class="product-img"><img src="assets/images/product-img-2.jpg" alt=""/></a></div>
+                    <div class="slide"><a href="#" class="product-img"><img src="assets/images/product-img-3.jpg" alt=""/></a></div>
+                    <div class="slide"><a href="#" class="product-img"><img src="assets/images/product-img-4.jpg" alt=""/></a></div>
+                </div>
+            </div>
+            <h4 class="title-a">hỗ trợ trực tuyến</h4>
+            <ul class="list-suppport text-center">
+                <li><a href="#"><img src="assets/images/sup-1.png" alt=""/></a></li>
+                <li><a href="#"><img src="assets/images/sup-2.png" alt=""/></a></li>
+            </ul>
+            <h4 class="title-a">thống kê truy cập</h4>
+            <ul class="list-hit">
+                <li>Số người đang online: <strong>09</strong></li>
+                <li>Lượt truy cập: <strong>120,150</strong></li>
+            </ul>
+        </div>
+        <div id="colContent">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphPopup" Runat="Server">
+    <asp:ContentPlaceHolder id="cphPopup" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
